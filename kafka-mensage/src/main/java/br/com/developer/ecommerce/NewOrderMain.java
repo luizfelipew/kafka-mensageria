@@ -20,7 +20,7 @@ public class NewOrderMain {
                 ex.printStackTrace();
                 return;
             }
-            System.out.println("Sucesso enviando " + data.topic() + " :::partition " + data.partition() + "/ offset " + data.offset() + "/ timestamp" + data.timestamp());
+            System.out.println("Sucesso enviando " + data.topic() + " :::partition " + data.partition() + "/ offset " + data.offset() + "/ timestamp " + data.timestamp());
         }).get();
     }
 
