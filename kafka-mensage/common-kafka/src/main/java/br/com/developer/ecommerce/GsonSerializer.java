@@ -6,7 +6,7 @@ import org.apache.kafka.common.serialization.Serializer;
 
 public class GsonSerializer<T> implements Serializer<T> {
 
-    private final Gson gson = new GsonBuilder().registerTypeAdapter(Message.class, new MessageAdpter()).create();
+    private final Gson gson = new GsonBuilder().registerTypeAdapter(Message.class, new MessageAdapter()).create();
 
     @Override
     public byte[] serialize(final String s, final T object) {

@@ -16,4 +16,12 @@ public class User {
         return uuid;
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("User{");
+        sb.append("uuid='").append(uuid).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
+
 }
